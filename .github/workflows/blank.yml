@@ -44,3 +44,13 @@ jobs:
           echo $HOME
           echo $SHELL
           echo $USER
+      - name: Run a test-log script
+        run: |
+          ::debug::This is a debug message.
+          ::notice::This is a notice message.
+          ::warning::This is a warning message.
+          ::error::This is an error message.
+          ::group::My Group of Logs
+          echo "Log message 1"
+          echo "Log message 2"
+          ::endgroup::

@@ -35,11 +35,12 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-      - name: Run a test0line script
+      - name: Run a test-line script
         run: |
           pwd
           ls -l
           ls -l ../
+          echo $GITHUB_WORKSPACE
           echo $HOME
           echo $SHELL
           echo $USER
